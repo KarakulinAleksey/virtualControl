@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>HVAC_test</title>
+  </head>
+  <body class="page">
+    <h1 class="page__title">Виртуальный контроллер</h1>
+    <section class="discret-in">      
+      <div class="discret-in__switch-a1-in">
+        <p class="discret-in__switch-a1-in-subtitle">A1_IN</p>
+        <img
+          src="./image/smalltumboff.svg"
+          alt="переключатель контрол A1_IN"
+          class="discret-in__switch-a1-in-image"
+        />
+      </div>
+      <div class="discret-in__switch-a2-in">
+        <p class="discret-in__switch-a2-in-subtitle">A2_IN</p>
+        <img
+          src="./image/smalltumb.svg"
+          alt="переключатель контрол A2_IN"
+          class="discret-in__switch-a2-in-image"
+        />
+      </div>
+    </section>
+
+    <section class="temperatura">
+        <div class="temperatura__block-value">
+            <p class="temperatura__subtitle">Температура</p>
+            <p class="temperatura__value">0</p>
+        </div>
+        <input class="temperatura__range" type="range" min="0" max="100" step="1" value="0" oninput="getTemp()"> 
+    </section>
+ 
+    <section class="channel">
+        <p class="channel__subtitle">Channel 1</p>
+        <p class="channel__value">0</p>
+    </section>
+
+    <section class="controllerOn">
+        <img
+          src="./image/lampoff.png"
+          alt="состояние виртуального контроллера"
+          class="controllerOn__image"
+        />
+        <p class="controllerOn__subtitle">Состояние виртуального контроллера</p>    
+    </section>
+
+    <section class="timer">
+        <p class="timer__subtitle">Таймер</p>
+        <p class="timer__value">0</p>
+    </section>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
